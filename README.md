@@ -5,4 +5,4 @@ Classes and utilities for distributing and consuming data from Internet o' Thing
 
 [cp]: https://circuitpython.org/
 [rxjs]: https://rxjs.dev/
-[zq]: https://zeromq.org/
+[zmq]: https://zeromq.org/
