@@ -1,0 +1,24 @@
+[
+  {
+    "address": "STRING::required",
+    "protocol": "STRING::required",
+    "port": "INTEGER::required",
+    "sampleRate": "FLOAT::required",
+    "name": "STRING::optional",
+    "defaultFilename": "STRING::optional",
+    "defaultPath": "STRING::optional",
+    "sensor": "STRING::optional",
+    "shortName": "STRING::optional,unique"
+  },
+  { 
+    "address": "STRING::required",
+    "protocol": "STRING::required",
+    "port": "INTEGER::required",
+    "sampleRate": "FLOAT::required",
+    "name": "STRING::optional",
+    "defaultFilename": "STRING::optional",
+    "defaultPath": "STRING::optional",
+    "sensor": "STRING::optional",
+    "shortName": "STRING::optional,unique"
+  }
+]

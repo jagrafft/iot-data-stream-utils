@@ -1,0 +1,17 @@
+[
+  {
+    "name": "consoleLogger",
+    "description": "Log to console",
+    "script": "consoleLogger.js"
+  },
+  {
+    "name": "jsonWriter",
+    "description": "Write to JSON file",
+    "script": "jsonWriter.js"
+  },
+  {
+    "name": "lineProtocolWriter",
+    "description": "Write to Influx Line Protocol file [NOT YET FULLY FUNCTIONAL]",
+    "script": "lineProtocolWriter.js"
+  }
+]

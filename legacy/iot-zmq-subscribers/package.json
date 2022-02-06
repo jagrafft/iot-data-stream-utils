@@ -1,0 +1,40 @@
+{
+  "name": "iot-zmq-subscribers",
+  "version": "0.0.4",
+  "description": "CLI for subscribing to then handling ZeroMQ streams from IoT devices, designed for compatibility with https://github.com/jagrafft/iot_zmq_publishers",
+  "type": "module",
+  "main": "./src/cli.js",
+  "scripts": {
+    "test": "tap"
+  },
+  "tap": {
+    "check-coverage": true,
+    "test-regex": "(/|^)test/.*.test.js$",
+    "ts": false
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jagrafft/iot-zmq-subscribers"
+  },
+  "keywords": [
+    "IoT",
+    "CLI",
+    "ZMQ",
+    "Data Distribution",
+    "Data Handler"
+  ],
+  "author": "jason a. grafft <j@grafft.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jagrafft/iot-zmq-subscribers/issues"
+  },
+  "dependencies": {
+    "commander": "^8.3.0",
+    "picocolors": "^1.0.0",
+    "pm2": "^5.1.2",
+    "rxjs": "^7.4.0",
+    "tap": "^15.1.5",
+    "tapromise": "^1.1.2",
+    "zeromq": "5"
+  }
+}
