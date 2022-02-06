@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-pm2-subscriber",
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jagrafft/iot-data-stream-utils"
+  },
+  "keywords": [
+    "IoT",
+    "ZMQ",
+    "Data Distribution"
+  ],
+  "author": "jason a. grafft <jason@grafft.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jagrafft/iot-data-stream-utils/issues"
+  },
+  "dependencies": {
+    "pm2": "^5.1.2",
+    "rxjs": "^7.5.2",
+    "zeromq": "^5.2.8"
+  }
+}
