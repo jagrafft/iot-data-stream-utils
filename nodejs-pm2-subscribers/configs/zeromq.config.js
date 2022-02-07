@@ -2,7 +2,7 @@ module.exports = {
   apps : [
     {
       name: "001",
-      script: "./src/pm2/csvWriterHarness.js",
+      script: "./src/pm2/jsonWriterHarness.js",
       env: {
         NODE_ENV: "development",
         NAME: "001",
@@ -15,7 +15,7 @@ module.exports = {
     },
     {
       name: "002",
-      script: "./src/pm2/csvWriterHarness.js",
+      script: "./src/pm2/jsonWriterHarness.js",
       env: {
         NODE_ENV: "development",
         NAME: "002",

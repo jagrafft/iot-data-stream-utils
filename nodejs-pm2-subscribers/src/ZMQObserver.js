@@ -1,8 +1,10 @@
-import zmq from "zeromq"
+//import zmq from "zeromq"
+const zmq = require("zeromq")
 
-import {
-  Observable
-} from 'rxjs'
+const { Observable } = require("rxjs")
+//import {
+//  Observable
+//} from 'rxjs'
 
 /* Class to encapsulate ZMQ publisher stream */
 class ZMQObserver {
@@ -222,6 +224,6 @@ class ZMQObserver {
   }
 }
 
-export {
+module.exports = {
   ZMQObserver
 }

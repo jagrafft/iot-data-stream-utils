@@ -1,5 +1,8 @@
-import { createWriteStream } from "fs"
-import { finalize, tap } from "rxjs/operators"
+// import { createWriteStream } from "fs"
+// import { finalize, tap } from "rxjs/operators"
+
+const { createWriteStream } = require("fs")
+const { finalize, tap } = require("rxjs/operators")
 
 /**
  * RxJS subscriber that writes CSV to a local file
@@ -23,7 +26,7 @@ const csvWriter = (observer, path, name, sepChar=",") => {
           finalize((val) => {
             writeStream.end()
           }),
-          tap((val) => CSV.parse(val),
+          tap((val) => JSON.parse(val),
             (err) => err,
             () => "COMPLETED"
           )
@@ -41,7 +44,7 @@ const csvWriter = (observer, path, name, sepChar=",") => {
       } 
 
       // write CSV line 
-      writeStream.write(`${Object.values(json).join(sepChar)}\n`)
+      writeStream.write(`${Object.values(json)}\n`)
     },
     error(err) {
       console.error(err)
@@ -52,6 +55,6 @@ const csvWriter = (observer, path, name, sepChar=",") => {
   })
 }
 
-export {
+module.exports = {
   csvWriter
 }

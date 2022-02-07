@@ -1,8 +1,6 @@
 {
   "name": "nodejs-pm2-subscriber",
   "version": "0.0.1",
-  "main": "src/app.js",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/jagrafft/iot-data-stream-utils"

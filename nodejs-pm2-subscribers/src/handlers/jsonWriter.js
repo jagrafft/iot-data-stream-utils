@@ -1,5 +1,5 @@
-import { createWriteStream } from "fs"
-import { finalize, tap } from "rxjs/operators"
+const { createWriteStream } = require("fs")
+const { finalize, tap } = require("rxjs/operators")
 
 /**
  * RxJS subscriber that writes JSON to a local file
@@ -56,6 +56,6 @@ const jsonWriter = (observer, path, name) => {
   })
 }
 
-export {
+module.exports = {
   jsonWriter
 }

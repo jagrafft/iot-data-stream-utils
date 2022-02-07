@@ -1,10 +1,5 @@
-import {
-  jsonWriter
-} from "../handlers/jsonWriter.js"
-
-import {
-  ZMQObserver
-} from "../ZMQObserver.js"
+const { jsonWriter } = require("../handlers/jsonWriter.js")
+const { ZMQObserver } = require("../ZMQObserver.js")
 
 const zmqObserver = new ZMQObserver(
   process.env.PROTOCOL,

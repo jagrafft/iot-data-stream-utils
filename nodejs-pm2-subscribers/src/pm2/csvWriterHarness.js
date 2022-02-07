@@ -1,10 +1,5 @@
-import {
-  csvWriter
-} from "../handlers/csvWriter.js"
-
-import {
-  ZMQObserver
-} from "../ZMQObserver.js"
+const { csvWriter } = require("../handlers/csvWriter.js")
+const { ZMQObserver } = require("../ZMQObserver.js")
 
 const zmqObserver = new ZMQObserver(
   process.env.PROTOCOL,
@@ -13,9 +8,7 @@ const zmqObserver = new ZMQObserver(
   process.env.SAMPLE_RATE,
   ""
 )
-console.log(process.env.FILE_PATH)
 
-/*
 const observable$ = csvWriter(
   zmqObserver,
   process.env.FILE_PATH,
@@ -27,4 +20,3 @@ process.on("SIGINT", () => {
   observable$.unsubscribe()
   process.exit(0)
 })
-*/
