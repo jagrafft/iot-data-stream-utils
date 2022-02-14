@@ -30,6 +30,7 @@ sudo apt install --upgrade --yes \
      bluetooth \
      bluez \
      bluez-utils \
+     git \
      libbluetooth-dev \
      pi-bluetooth \
      python3-pip \
@@ -58,3 +59,7 @@ python3 blinkatest.py
 #sudo rm -rf \
 #     blinkatest.py \
 #     raspi-blinka.py
+
+# Print device serial number #
+echo "DEVICE SERIAL NUMBER"
+echo `cat /proc/cpuinfo | grep Serial | cut -d ' ' -f 2`
