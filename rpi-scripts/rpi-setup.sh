@@ -59,7 +59,3 @@ python3 blinkatest.py
 #sudo rm -rf \
 #     blinkatest.py \
 #     raspi-blinka.py
-
-# Print device serial number #
-echo "DEVICE SERIAL NUMBER"
-echo `cat /proc/cpuinfo | grep Serial | cut -d ' ' -f 2`
