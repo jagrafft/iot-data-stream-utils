@@ -31,9 +31,9 @@ then
     else
         if [ -z "$3" ]
         then
-            FILE_PATH=$2 npx pm2 start configs/zeromq.config.js --only $3
-        else
             FILE_PATH=$2 npx pm2 start configs/zeromq.config.js
+        else
+            FILE_PATH=$2 npx pm2 start configs/zeromq.config.js --only $3
         fi
     fi
 fi
