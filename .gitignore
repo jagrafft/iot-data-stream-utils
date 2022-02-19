@@ -1,4 +1,5 @@
 .DS_Store
+zeromq.config.js
 *~
 \#*\#
 /.emacs.desktop
