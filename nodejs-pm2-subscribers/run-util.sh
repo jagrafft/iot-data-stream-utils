@@ -29,6 +29,6 @@ then
     then
         echo "Must provide path"
     else
-        FILE_PATH=$2 npx pm2 start configs/zeromq.config.js
+        FILE_PATH=$2 npx pm2 start configs/zeromq.config.js --only "003"
     fi
 fi

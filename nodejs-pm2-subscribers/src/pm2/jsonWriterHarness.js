@@ -12,7 +12,7 @@ const zmqObserver = new ZMQObserver(
 const observable$ = jsonWriter(
   zmqObserver,
   process.env.FILE_PATH,
-  `${new Date().getTime()}-${process.env.NAME}-${process.env.ID}`
+  `${new Date().getTime()}_${process.env.NAME}_${process.env.UUID}`
 )
 
 process.on("SIGINT", () => {
