@@ -1,8 +1,9 @@
+#!/bin/bash
 # Raspberry Pi setup script
 #
 # author:      Jason A. Grafft <j@grafft.co>
 # license:     ISC
-# last_update: 14.02.2022
+# last_update: 19.02.2022
 
 # Check access permissions
 if [[ "$EUID" = 0 ]]; then
@@ -29,17 +30,17 @@ sudo apt autoremove --yes
 sudo apt install --upgrade --yes \
      bluetooth \
      bluez \
-     bluez-utils \
      git \
      libbluetooth-dev \
+     libbluetooth3 \
      pi-bluetooth \
+     python3-bluez \
+     python3-gattlib \
      python3-pip \
-     setuptools
+     python3-setuptools \
+     python3-venv
 
 # Install Python environment and packages #
-# Python Poetry
-curl -sSL https://install.python-poetry.org | python3 -
-
 sudo python3 -m pip install --upgrade \
      adafruit-python-shell \
      pybluez
@@ -51,11 +52,3 @@ curl -o blinkatest.py https://learn.adafruit.com/pages/12762/elements/2993427/do
 
 # Install
 sudo python3 raspi-blinka.py
-
-# Test
-python3 blinkatest.py
-
-# Remove downloaded scripts
-#sudo rm -rf \
-#     blinkatest.py \
-#     raspi-blinka.py

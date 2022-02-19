@@ -4,10 +4,14 @@ version = "0.0.3"
 description = "Scripts for streaming data from IoT devices."
 authors = ["jason a. grafft <j@grafft.co>"]
 license = "ISC"
+packages = [
+    { include = "iot_zmq_publishers" }
+]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 adafruit-circuitpython-bno055 = "^5.3.4"
+pyzmq = "^22.3.0"
 
 [tool.poetry.dev-dependencies]
 
