@@ -20,8 +20,8 @@ rm -rf iot-data-stream-utils/
 
 # Set up Python virtual environment for script execution
 python3 -m venv iot_zmq_publishers/
-source iot_zmq_publishers/bin/activate
 cd iot_zmq_publishers/
+source bin/activate
 pip3 install -r requirements.txt
 deactivate
 cd $HOME
