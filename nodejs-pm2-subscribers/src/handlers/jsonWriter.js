@@ -45,7 +45,7 @@ const jsonWriter = (observer, path, name) => {
       }
 
       // write JSON string
-      writeStream.write(json)
+      writeStream.write(JSON.parse(json))
     },
     error(err) {
       console.error(err)

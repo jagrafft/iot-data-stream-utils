@@ -36,4 +36,7 @@ then
             FILE_PATH=$2 npx pm2 start configs/zeromq.config.js --only $3
         fi
     fi
+else
+    echo "Option '$1' not supported"
 fi
+
